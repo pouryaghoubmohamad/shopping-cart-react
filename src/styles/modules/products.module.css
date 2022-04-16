@@ -1,0 +1,28 @@
+.wrapper{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+@media screen and (min-width : 480px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media screen and (min-width : 768px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}

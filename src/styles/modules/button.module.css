@@ -1,0 +1,23 @@
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.buttonPrimary{
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.buttonGreen{
+    background-color: #34a853;
+    color: #fff;
+}

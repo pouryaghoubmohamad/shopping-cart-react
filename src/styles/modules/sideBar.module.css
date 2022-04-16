@@ -1,0 +1,149 @@
+.sidebar{
+    height: 100%;
+    background-color: var(--color_nav_bg);
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all .3s linear;
+    z-index: 2;
+}
+
+.sidebar--close{
+    transform: translateX(-100%);
+}
+
+.nav{
+    width: 16rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all .3s linear;
+}
+
+.nav--close{
+    width: 3rem;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo .nav__icon{
+    color: var(--color_nav_active);
+
+}
+
+.nav__icon{
+    display: inline-flex;
+    font-size: 1.5rem;
+    padding: 0.35rem;
+    color: var(--color_nav_not_active);
+}
+
+.icon__dashboard{
+    display: none;
+}
+
+.icon__close{
+    cursor: pointer;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.nav__text{
+    color: var(--color_nav_txt);
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.nav--close .nav__title{
+    opacity: 0;
+    overflow: hidden;
+    transform: all .3s linear;
+}
+
+.nav__item{
+    list-style: none;
+}
+
+.nav__item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+}
+
+
+.nav__title{
+    color: white;
+    font-weight: 400;
+}
+
+.active{
+    background-color: var(--color_nav_active_bg);
+}
+
+.active .nav__icon{
+    color: var(--color_nav_active);
+}
+
+.closeSticky{
+    transform: scale(-1);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+@media screen and (min-width : 1024px) {
+
+    .sidebar{
+        position: sticky;
+        height: auto;
+    }
+
+    .icon__dashboard{
+        display: block;
+    }
+
+    .icon__close{
+        display: none;
+    }
+
+    .sidebar--close{
+        transform: translateX(0);
+        height: auto;
+    }
+
+    .nav--close .nav__list{
+        /* align-items: center;
+        justify-content: center; */
+        display: flex;
+    }
+
+    .nav__icon{
+        font-size: 2rem;
+    }
+
+    .nav--close .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav--close .closeSticky{
+        transform: scale(1);
+    }
+
+    .nav--close .nav__text{
+        text-align: center;
+    }
+
+    .nav--close .nav__list .nav__item a{
+        padding: 0.5rem 0;
+    }
+}
