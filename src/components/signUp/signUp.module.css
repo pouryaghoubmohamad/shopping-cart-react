@@ -1,0 +1,80 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e7e7e7;
+    padding-top: 3rem;
+}
+
+.wrapperContainer {
+    width: 95%;
+    max-width: 400px;
+}
+
+.form {
+    width: 100%;
+}
+
+.titleSignUp {
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.formControl {
+}
+
+.checkboxTerms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.formField {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.formControl label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.formControl input,
+.formControl select {
+    min-height: 38px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+}
+
+.formControl select {
+    background-color: #fff;
+}
+
+.formControl input:focus-visible {
+    outline: 1px solid #8b5cf6;
+}
+
+.buttonAction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.errors {
+    color: red;
+    font-weight: 600;
+}
+
+.fromRadio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

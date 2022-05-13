@@ -22,7 +22,7 @@ const SideBarItem = ({sidebar , sideBarOpen , setSideBarOpen}) => {
         <li className={styles.nav__item} onClick={() => checkWindowSize()}>
             <NavLink 
                 to={url}
-                className={({isActive}) => isActive && styles.active}
+                className={({isActive}) => isActive ? styles.active : undefined}
             >
                 <div className={styles.nav__icon}>
                     {icon}

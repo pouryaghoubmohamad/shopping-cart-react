@@ -1,9 +1,9 @@
-.button{
+.button {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
     border: none;
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -12,12 +12,18 @@
     text-transform: capitalize;
 }
 
-.buttonPrimary{
+.buttonPrimary {
     background-color: #1a73e8;
     color: #fff;
 }
 
-.buttonGreen{
+.buttonPrimary:disabled {
+    background: #c7d2fe;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.buttonGreen {
     background-color: #34a853;
     color: #fff;
 }
